@@ -204,6 +204,7 @@ public class ArrayHelper {
         return arr;
     }
 
+    //make use of this for banking assignment
     public static void printElements(int[] arr) {
         for(int e : arr) {
             System.out.print(e + ", ");

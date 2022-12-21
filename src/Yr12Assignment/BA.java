@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  * This application allows the user to display information,
  * send money, add money and exit the program.
  */
-public class MySimpleBankingApp {
+public class BA {
     /**
      * Declare variables that can be used by every method here! 
      */
