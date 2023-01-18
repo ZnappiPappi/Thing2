@@ -16,7 +16,8 @@ public class WhatsTheWeather {
      static int[] conditions = new int[7];
 
     public static void main(String[] args) {
-         // System.out.println("Which day would you like to record weather data for?");
+         //System.out.println("Which day would you like to record weather data for?");
+
          
         // record all temperature data for each day of the week
         for (int i = 0; i <= 6; i++) {
