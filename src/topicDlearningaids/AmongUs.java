@@ -40,6 +40,12 @@ public class AmongUs {
         true, true, true,
     };
 
+    private static boolean[] AVAILABLE_ROLES = {
+        true, true, true,
+        true, true, true,
+        true,
+    };
+
     // TODO: Declare a static boolean array with all the roles taken
 
     private String colour;
@@ -90,7 +96,13 @@ public class AmongUs {
      * Gives this instance a random role
      */
     public void setRandmomRole() {
-
+        Random r = new Random();
+        int select = 0;
+        do {
+            select = r.nextInt(ROLES.length - 1);
+        } while(AVAILABLE_ROLES[select] == false);
+        this.role = ROLES[select];
+        AVAILABLE_ROLES[select] = false;
     }
 
     /**
