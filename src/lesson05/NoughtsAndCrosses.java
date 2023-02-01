@@ -15,8 +15,8 @@ public class NoughtsAndCrosses {
 
         // filling the first row with crosses
         //the first [] displays our row the second [] displays our column
-        grid[1][0] = 'X';
-        grid[0][2] = 'X';
+        grid[0][0] = 'X';
+        grid[1][1] = 'X';
         grid[2][2] = 'X';
 
         displayGrid();
@@ -67,18 +67,31 @@ public class NoughtsAndCrosses {
         return true; 
     }
 
-    public static boolean diagonalCheck(int col, char symbol) {
+    public static boolean diagonalCheck(char symbol) {
         // TODO check for if the middle of the grid has symbol
-        char middle = grid[1][1];
+        /*char middle = grid[1][1];
         if(middle != symbol) {
             return false;
+        }*/
+        boolean winRight = true;
+        boolean winLeft = true;
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid.length; col++) {
+                if (row == col) {
+                    if (grid[row][col] != symbol) {
+                        winLeft = false;
+                    }
+                } else if (row + col == grid.length -1) {
+                    if (grid[row][col] != symbol) {
+                        winRight = false;
+                    }
+                }
+            }
         }
-
-        // check for the extremes
         return true;
     }
 
-    public static boolean isWinningMove(int col, char symbol) {
-        return diagonalCheck(col, symbol) || verticalCheck(col, symbol) || horizontalCheck(col, symbol);
+   public static boolean isWinningMove(int col, char symbol) {
+        return diagonalCheck(symbol) || verticalCheck(col, symbol) || horizontalCheck(col, symbol);
     }
 }

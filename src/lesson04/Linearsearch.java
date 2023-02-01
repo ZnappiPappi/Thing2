@@ -35,4 +35,17 @@ public class Linearsearch {
         }
         return -1;
     }
+
+    public static int[] search2D(int[][] numarr, int target) {
+        int[] ij = {-1, -1};
+        for (int i = 0; i < numarr.length; i++) {
+            for (int j = 0; j < numarr.length; j++) {
+                if (numarr[i][j] == target) {
+                    ij[0]=i;
+                    ij[1]=j;
+                }
+            }
+        }
+        return ij;
+    }
 }
