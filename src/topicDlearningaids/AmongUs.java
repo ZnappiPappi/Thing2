@@ -27,8 +27,7 @@ public class AmongUs {
         "ShapeShifter", "Guardian Angel"
     };
 
-    public static final int CREW_MAX = 10;
-    public static final int IMPOSTER_MAX = 2;
+    public static int[] playerTracker = {0, 0, 0, 0, 0, 0, 0, 0,};
 
 
     private static boolean[] AVAILABLE_COLOURS = {
@@ -52,6 +51,7 @@ public class AmongUs {
      */
     public AmongUs() {
         setRandomColour();
+        setRandmomRole();
         // TODO: continue to initialise the state
     }
 
@@ -105,15 +105,37 @@ public class AmongUs {
             select = r.nextInt(ROLES.length - 1);
         } while(!isRoleAvailable(ROLES[select])); //TODO: see if you can find a use for the while loop in the future
         this.role = ROLES[select];
+        playerTracker[select] = playerTracker[select] + 1;
         //AVAILABLE_ROLES[select] = false; // this isnt really relevant
     }
+
+
     private boolean isRoleAvailable(String role) {
         for(int i = 0; i < ROLES.length; i++) {
             if (ROLES[i].equals(role)) {
-                return (ROLES_AVAILABLE[]);
+                switch (ROLES[i]) {
+                    case "Imposter": {
+                        if(playerTracker[i] < 2) {
+                            return true; // the role of imposter is available because we did not hit a max
+                        }
+                    }
+                    case "Crew": {
+                        return true;
+                    }
+                    case"Ghost": {
+                        return false;
+                    } 
+                    default: {
+                        if(playerTracker[i] < 1) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
             }
         }
-        return true;
+        return false; // i think this is unreachable(never get there) but whatever 
     }
 
 

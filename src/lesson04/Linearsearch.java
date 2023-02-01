@@ -29,7 +29,7 @@ public class Linearsearch {
 
     public static int search(String[] strarr, String target) {
         for (int i = 0; i < strarr.length; i++) {
-            if (strarr[i] == target) {
+            if (strarr[i].equals(target)) {
                 return i;
             }
         }
@@ -41,6 +41,18 @@ public class Linearsearch {
         for (int i = 0; i < numarr.length; i++) {
             for (int j = 0; j < numarr.length; j++) {
                 if (numarr[i][j] == target) {
+                    ij[0]=i;
+                    ij[1]=j;
+                }
+            }
+        }
+        return ij;
+    }
+    public static int[] search2D(String[][] strarr, String target) {
+        int[] ij = {-1, -1};
+        for (int i = 0; i < strarr.length; i++) {
+            for (int j = 0; j < strarr.length; j++) {
+                if (strarr[i][j].equals(target)) {
                     ij[0]=i;
                     ij[1]=j;
                 }

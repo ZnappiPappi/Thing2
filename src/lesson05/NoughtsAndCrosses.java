@@ -19,8 +19,12 @@ public class NoughtsAndCrosses {
         grid[1][1] = 'X';
         grid[2][2] = 'X';
 
-        displayGrid();
+        grid[0][1] = 'O';
+        grid[0][2] = 'O';
+        grid[1][0] = 'O';
 
+        displayGrid();
+        System.out.println("Diagonal check" + diagonalCheck("O"));
     }
 
     public static void displayGrid() {
