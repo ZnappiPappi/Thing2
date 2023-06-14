@@ -1,0 +1,46 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="231px" height="264px" viewBox="-0.5 -0.5 231 264" content="&lt;mxfile&gt;&lt;diagram id=&quot;Fp9so3xS_Y3XmemD9uRK&quot; name=&quot;Page-1&quot;&gt;7ZbbjtowEIafJlJ7sVUOwNJLCNuDxEqrUqnX3mRIrHU8kTMssE/fceIQQkBLSy8rRcjzecbY8/+GeFFc7L4aUeaPmILyQj/dedHCC8NJGPCnBfsGjEbTBmRGpg0KOrCSb+Cg7+hGplD1EglRkSz7MEGtIaEeE8bgtp+2RtX/1lJkMACrRKgh/SVTyhs6Hfsd/wYyy9tvDnw3U4g22YEqFyluj1D04EWxQaRmVOxiULZ3bV+aui8XZg8bM6DpmoJJU/Aq1MadbVaWKDUVdoFmi7Rvz11tZaGE5mi+Rk0rNxNwLJTMNI8TrgPD4BUMSW7ZzE0QlkyTXKp0Kfa4sdurSCQvbTTP0cg3XlYotyZPG3Lq806PM1a2krHP1EDFOU/tmYMT9Ch2vcSlqMiBBJUSZSWfD8cohMmkniMRFi7JdYiPA7uLXQ4O2rHnAQsgs+cUVxDeO7md38ORi7ede8LIsfzIOeHEQeEcmx3W7kTlgdP1vMb3A43vOPzOA1Y/CuwZLaigqiTqE5oKghNEsjhFChNBw+JsA9zrjg0MxS2lWmiDLxCjQnbOQmPjMKnUCWpNpmBNFy1WlSKROlvWOYtRR364vlqEXLtW9c3LZZqCtvZAEiQaL9jd1veg7vt4zg8rEfufxt6YNx5zHHQxPzbdUIyazyJkbQtgo21tA6700OS8h1rPTK6zTBCObrfMdGCZgXRK1pI00rW/gsFf6VawAgo6oX5aHRd3wUDMaChmdEY4JZ5BPWEla0tGC9Pkngj6nmZ9U0qdg5H/SMtgfOX9n94u5eczUs7tXxFQjukH2pfw0Ytm9l7z8P8NvUXV6ZVX1A//WFcOu7eCeu7o1Sp6+A0=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <clipPath id="mx-clip-4-31-222-124-0">
+            <rect x="4" y="31" width="222" height="124"/>
+        </clipPath>
+        <clipPath id="mx-clip-4-163-222-102-0">
+            <rect x="4" y="163" width="222" height="102"/>
+        </clipPath>
+    </defs>
+    <g>
+        <path d="M 0 26 L 0 0 L 230 0 L 230 26" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 0 26 L 0 260 L 230 260 L 230 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 26 L 230 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="114.5" y="17.5">
+                Appointment
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-4-31-222-124-0)" font-size="12px">
+            <text x="5.5" y="43.5">
+                - ID
+            </text>
+            <text x="5.5" y="57.5">
+                - session
+            </text>
+            <text x="5.5" y="71.5">
+                - date
+            </text>
+            <text x="5.5" y="85.5">
+                - time
+            </text>
+            <text x="5.5" y="99.5">
+                - location
+            </text>
+            <text x="5.5" y="113.5">
+                - guest
+            </text>
+        </g>
+        <path d="M 0 154 L 230 154" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-4-163-222-102-0)" font-size="12px">
+            <text x="5.5" y="175.5">
+                + method(type): type
+            </text>
+        </g>
+    </g>
+</svg>

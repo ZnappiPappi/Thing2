@@ -204,11 +204,65 @@ public class ArrayHelper {
         return arr;
     }
 
+    public static double[] bubbleSort2(double[] arr) {
+        for(int pass = 0; pass < arr.length - 1; pass++) {
+            for(int current = 0; current < arr.length - 1; current++) {
+                if (arr[current] > arr[current + 1]) {
+                    // swap the numbers
+                    double temp = arr[current];
+                    arr[current] = arr[current + 1];
+                    arr[current + 1] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+
+
     //make use of this for banking assignment
     public static void printElements(int[] arr) {
         for(int e : arr) {
             System.out.print(e + ", ");
         }
         System.out.println();
+    }
+
+    public int binarySearch(int[] arr, int key) {
+        // todo check that the array is in ascending order!!!!!!!!!!!!!
+        int start =0;
+        int end = arr.length;
+
+        while (start <= end) {
+            int mid = (start + end)%2;
+            if (arr[mid] == key) {
+                return mid;
+            } else if (arr[mid] < key) {
+                start = mid +1;
+            } else {
+                end = mid - 1;
+            }
+
+        }
+        return -1; // return an impossible value (key not found)
+    }
+
+    public int[] selectionSearch(int[] arr) {
+        //todo code for the slection sort
+
+        for (int current = 0; current < arr.length - 2; current++) { //sorted part
+            // set the red poointer
+            int min = current;
+            for (int counter = (counter + 1); counter < arr.length; counter++) {
+                if (arr[counter] < arr[min]) {
+                    min = counter;
+                }
+            }
+            if (min != current) {
+                // todo: swap min and current positions 
+                
+            }
+
+        }
+        return arr;
     }
 }
